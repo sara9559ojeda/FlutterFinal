@@ -6,25 +6,25 @@ const char* password = "GL56373703";
 
 WebSocketsClient webSocket;
 
-#define LED_PIN 2  // Cambia el pin si usas otro
+#define LED_PIN 2 
 
 void webSocketEvent(WStype_t type, uint8_t * payload, size_t length) {
   switch(type) {
     case WStype_DISCONNECTED:
-      Serial.println("❌ Desconectado del servidor");
+      Serial.println(" Desconectado del servidor");
       break;
     case WStype_CONNECTED:
-      Serial.println("✅ Conectado al servidor WebSocket");
+      Serial.println(" Conectado al servidor WebSocket");
       webSocket.sendTXT("ESP32 listo");
       break;
     case WStype_TEXT:
-      Serial.printf("📩 Mensaje recibido: %s\n", payload);
+      Serial.printf(" Mensaje recibido: %s\n", payload);
       if (strcmp((char*)payload, "LED_ON") == 0) {
         digitalWrite(LED_PIN, HIGH);
-        Serial.println("💡 LED ENCENDIDO");
+        Serial.println(" LED ENCENDIDO");
       } else if (strcmp((char*)payload, "LED_OFF") == 0) {
         digitalWrite(LED_PIN, LOW);
-        Serial.println("🌑 LED APAGADO");
+        Serial.println(" LED APAGADO");
       }
       break;
   }
@@ -40,9 +40,9 @@ void setup() {
     delay(500);
     Serial.print(".");
   }
-  Serial.println("\n✅ WiFi conectado");
+  Serial.println("\n WiFi conectado");
 
-  // Cambia "192.168.X.X" por la IP de tu PC donde corre el servidor Node.js
+ 
   webSocket.begin("192.168.1.11", 8080, "/");
   webSocket.onEvent(webSocketEvent);
   webSocket.setReconnectInterval(5000);
