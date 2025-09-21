@@ -36,7 +36,7 @@ class _ControlPageState extends State<ControlPage> {
 
     // Cambia la IP por la de tu servidor WebSocket o ESP32
     channel = WebSocketChannel.connect(
-      Uri.parse('ws://192.168.1.11:8080'),
+      Uri.parse('ws://192.168.1.9:8085'),
     );
 
     // Escuchar mensajes entrantes y cambios de estado

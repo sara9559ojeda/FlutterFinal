@@ -8,9 +8,9 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "C:/Users/saram/FlutterFinal/esp322-client/include",
-                "C:/Users/saram/FlutterFinal/esp322-client/src",
-                "C:/Users/saram/FlutterFinal/esp322-client/.pio/libdeps/esp32dev/WebSockets/src",
+                "C:/Users/saram/universidad/FlutterFinal/esp322-client/include",
+                "C:/Users/saram/universidad/FlutterFinal/esp322-client/src",
+                "C:/Users/saram/universidad/FlutterFinal/esp322-client/.pio/libdeps/esp32dev/WebSockets/src",
                 "C:/Users/saram/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src",
                 "C:/Users/saram/.platformio/packages/framework-arduinoespressif32/libraries/SPI/src",
                 "C:/Users/saram/.platformio/packages/framework-arduinoespressif32/libraries/Ethernet/src",
@@ -245,9 +245,9 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "C:/Users/saram/FlutterFinal/esp322-client/include",
-                    "C:/Users/saram/FlutterFinal/esp322-client/src",
-                    "C:/Users/saram/FlutterFinal/esp322-client/.pio/libdeps/esp32dev/WebSockets/src",
+                    "C:/Users/saram/universidad/FlutterFinal/esp322-client/include",
+                    "C:/Users/saram/universidad/FlutterFinal/esp322-client/src",
+                    "C:/Users/saram/universidad/FlutterFinal/esp322-client/.pio/libdeps/esp32dev/WebSockets/src",
                     "C:/Users/saram/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src",
                     "C:/Users/saram/.platformio/packages/framework-arduinoespressif32/libraries/SPI/src",
                     "C:/Users/saram/.platformio/packages/framework-arduinoespressif32/libraries/Ethernet/src",
